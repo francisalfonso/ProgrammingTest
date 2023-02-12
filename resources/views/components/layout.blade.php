@@ -28,7 +28,7 @@
 
     <body class="mb-48">
         <nav class="flex justify-between items-center mb-4">
-            <a href="/"><img class="w-25 h-24" src="{{asset('images/logoone.png')}}" alt="" class="logo"/></a>
+            <a href="/listings"><img class="w-25 h-24" src="{{asset('images/logoone.png')}}" alt="" class="logo"/></a>
             <ul class="flex space-x-6 mr-6 text-lg">
                 @auth
                 <li>
@@ -54,11 +54,11 @@
                     <a href="/register" class="hover:text-laravel"
                         ><i class="fa-solid fa-user-plus"></i> Register</a>
                 </li> --}}
-                <li>
+                {{-- <li>
                     <a href="/login" class="hover:text-laravel"
                         ><i class="fa-solid fa-arrow-right-to-bracket"></i>
                         Login</a>
-                </li>
+                </li> --}}
                 @endauth
             </ul>
         </nav>
@@ -68,11 +68,14 @@
         {{$slot}}
     </main>
     <footer
-        class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center">
+        class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-teal-400 text-black h-24 mt-24 opacity-90 md:justify-center">
         <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
+        <br>
+        <p class="ml-2">|| Made by Francis Bandelaria</p>
+
 
         <a href="/listings/create"
-            class="absolute top-1/3 right-10 bg-black text-white py-2 px-5">Add Company</a>
+            class="absolute top-1/3 right-10 bg-black text-white py-2 px-5 rounded-lg hover:bg-white hover:text-black">Add Company</a>
     </footer>
 
     <x-flash-message/>

@@ -7,7 +7,7 @@
 {{-- <h2>{{$listing['title']}}</h2>
 <p>{{$listing['description']}}</p> --}}
 
-<a href="/" class="inline-block text-black ml-4 mb-4"><i class="fa-solid fa-arrow-left"></i> Back </a>
+<a href="/listings" class="inline-block text-black ml-4 mb-4"><i class="fa-solid fa-arrow-left"></i> Back </a>
             <div class="mx-4">
                 <x-card class="p-24">
                     <div
@@ -74,17 +74,17 @@
                             {{-- WEBSITE URL --}}
                             <a href="{{$listing->website}}"
                                     target="_blank"
-                                    class="bg-black text-white py-2 px-5 mt-10"
+                                    class="bg-black text-white py-2 px-5 mt-10 rounded-lg"
                                     ><i class="fa-solid fa-globe pr-2"></i> Visit
                                     Website
                             </a>
 
                         <x-card class="mt-4 p-2 flex space-x-6">    
                             {{-- ADD EMPLOYEES --}}
-                            <a href="/employees/create-employees" class="bg-black text-white py-2 px-5"><i class="fa-solid fa-plus pr-2"></i> Add Employees</a>
+                            <a href="/employees/create-employees" class="bg-black text-white py-2 px-5 rounded-lg"><i class="fa-solid fa-plus pr-2"></i> Add Employees</a>
 
                             {{-- EDIT COMPANY --}}
-                            <a href="/listings/{{$listing->id}}/edit" class="bg-black text-white py-2 px-5">
+                            <a href="/listings/{{$listing->id}}/edit" class="bg-black text-white py-2 px-5 rounded-lg">
                                 <i class="fa-solid fa-pencil pr-2"></i> Edit Company
                             </a>
                             
@@ -92,7 +92,7 @@
                             <form method="POST" action="/listings/{{$listing->id}}">
                                 @csrf
                                 @method('DELETE')
-                                <button class="content-center bg-red-500 text-white py-2 px-5"><i class="fa-solid fa-trash pr-2"></i> Delete Company</button>
+                                <button class="content-center bg-red-500 text-white py-2 px-5 rounded-lg"><i class="fa-solid fa-trash pr-2 "></i> Delete Company</button>
                             </form>
                          </x-card>
                     </div>

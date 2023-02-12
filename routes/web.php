@@ -18,7 +18,7 @@ use App\Http\Controllers\EmployeeController;
 */
 
 // All Listings
-Route::get('/', [ListingController::class, 'index']);
+Route::get('/listings', [ListingController::class, 'index']);
 
 
     // return view('listings', [
@@ -69,7 +69,7 @@ Route::post('/users', [UserController::class, 'store']);
 Route::post('/logout', [UserController::class, 'logout']);
 
 // Show Login Form
-Route::get('/login', [UserController::class, 'login']);
+Route::get('/', [UserController::class, 'login']);
 
 // Login User
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);

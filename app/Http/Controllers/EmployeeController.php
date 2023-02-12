@@ -25,7 +25,7 @@ class EmployeeController extends Controller
 
         Employee::create($formFields);
 
-        return redirect('/')->with('message', 'Employee has succesfully added!');
+        return redirect('/listings')->with('message', 'Employee has succesfully added!');
     }
 
     // Show Edit Form
@@ -51,6 +51,6 @@ class EmployeeController extends Controller
     // Delete Listing
     public function destroy(Employee $employee) {
         $employee->delete();
-        return redirect('/')->with('message', 'Employee deleted successfully!');
+        return redirect('/listings')->with('message', 'Employee deleted successfully!');
     }
 }

@@ -2,7 +2,7 @@
     <x-card class="p-10 max-w-lg mx-auto mt-24">
                     <header class="text-center">
                         <h2 class="text-2xl font-bold uppercase mb-1">
-                            Register
+                            Login
                         </h2>
                         <p class="mb-4">Login your Account</p>
                     </header>
@@ -46,20 +46,20 @@
                         <div class="mb-6">
                             <button
                                 type="submit"
-                                class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
+                                class="bg-teal-400 text-black rounded py-2 px-4 hover:bg-teal-800 hover:text-white"
                             >
                                 Sign In
                             </button>
                         </div>
 
-                        <div class="mt-8">
+                        {{-- <div class="mt-8">
                             <p>
                                 Don't have an account?
                                 <a href="/register" class="text-laravel"
                                     >Register</a
                                 >
                             </p>
-                        </div>
+                        </div> --}}
                     </form>
     </x-card>
 </x-layout>

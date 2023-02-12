@@ -3,9 +3,9 @@
                 >
                     <header class="text-center">
                         <h2 class="text-2xl font-bold uppercase mb-1">
-                            Create a Gig
+                            Create a Company
                         </h2>
-                        <p class="mb-4">Post a gig to find a developer</p>
+                        <p class="mb-4">Post a Company</p>
                     </header>
 
                     <form method="POST" action="/listings" enctype="multipart/form-data">
@@ -141,12 +141,12 @@
 
                         <div class="mb-6">
                             <button
-                                class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
+                                class="bg-teal-400 text-black rounded py-2 px-4 hover:bg-teal-800 hover:text-white"
                             >
                                 Create Company
                             </button>
 
-                            <a href="/" class="text-black ml-4"> Back </a>
+                            <a href="/listings" class="text-black ml-4"> Back </a>
                         </div>
                     </form>
 </x-card>

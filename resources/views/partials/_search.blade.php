@@ -6,11 +6,11 @@
                 class="fa fa-search text-gray-400 z-20 hover:text-gray-500"
             ></i>
         </div>
-        <input type="text" name="search" class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none" placeholder="Search Companies..." />
+        <input type="text" name="search" class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none " placeholder="Search Companies..." />
         <div class="absolute top-2 right-2">
             <button
                 type="submit"
-                class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600"
+                class="h-10 w-20 text-black rounded-lg bg-teal-400 hover:bg-teal-800 hover:text-white"
             >
                 Search
             </button>

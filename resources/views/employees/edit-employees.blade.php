@@ -100,12 +100,12 @@
     
                             <div class="mb-6">
                                 <button
-                                    class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
+                                    class="bg-teal-400 text-black rounded py-2 px-4 hover:bg-teal-800 hover:text-white"
                                 >
                                     Update
                                 </button>
     
-                                <a href="/" class="text-black ml-4"> Back </a>
+                                <a href="/listings" class="text-black ml-4"> Back </a>
                             </div>
                         </form>
     </x-card>
