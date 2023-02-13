@@ -16,5 +16,6 @@
                 <i class="fa-solid fa-location-dot"></i>{{$listing->location}}
             </div> --}}
         </div>
+        
     </div>
 </x-card>

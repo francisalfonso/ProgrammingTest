@@ -1,10 +1,10 @@
 <x-layout>
-    <x-card class="p-10 max-w-lg mx-auto mt-24">
+    <x-card class="p-10 max-w-lg mx-auto mt-24 rounded-xl" >
                     <header class="text-center">
                         <h2 class="text-2xl font-bold uppercase mb-1">
-                            Login
+                            Login to Job-All
                         </h2>
-                        <p class="mb-4">Login your Account</p>
+                        <p class="mb-4">Admin Login Page</p>
                     </header>
 
                     <form method="POST" action="/users/authenticate">
@@ -43,10 +43,10 @@
                         </div>
 
 
-                        <div class="mb-6">
+                        <div class="mb-6 flex justify-center">
                             <button
                                 type="submit"
-                                class="bg-teal-400 text-black rounded py-2 px-4 hover:bg-teal-800 hover:text-white"
+                                class=" bg-teal-400 text-black rounded py-2 px-4 hover:bg-teal-800 hover:text-white content-center"
                             >
                                 Sign In
                             </button>
@@ -61,5 +61,9 @@
                             </p>
                         </div> --}}
                     </form>
+                    <div
+     class="absolute top-0 left-0 w-full h-full opacity-20 bg-no-repeat bg-center bg-cover -z-10"
+     style="background-image: url('images/bg.jpg')"
+ ></div>
     </x-card>
 </x-layout>
