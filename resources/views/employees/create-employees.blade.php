@@ -3,7 +3,7 @@
                     >
                         <header class="text-center">
                             <h2 class="text-2xl font-bold uppercase mb-1">
-                                Add Employee
+                                Employee Information
                             </h2>
                             <p class="mb-4">Add Employee</p>
                         </header>

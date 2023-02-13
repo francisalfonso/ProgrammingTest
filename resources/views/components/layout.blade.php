@@ -23,7 +23,7 @@
                 },
             };
         </script>
-        <title>Francis</title>
+        <title>JOBALL - ADMIN</title>
     </head>
 
     <body class="mb-48">
@@ -73,10 +73,15 @@
     </main>
     
     <footer
-        class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-teal-400 text-black h-24 mt-24 opacity-90 md:justify-center">
-        <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
+        class=" fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-teal-400 text-black h-24 mt-24 opacity-90 md:justify-center text-lg">
+        <p class="ml-2 text-left">Copyright &copy; 2023, All Rights reserved</p>
         <br>
         <p class="ml-2">|| Made by Francis Bandelaria</p>
+        <a href="https://www.facebook.com/frncsbndlr10/"><i class="fa-brands fa-facebook pr-2 ml-2 fa-2x"></i></a>
+        <a href="https://www.instagram.com/francis.bndlr/?hl=en"><i class="fa-brands fa-instagram pr-2 ml-1 fa-2x"></i></a>
+        <a href="https://twitter.com/francisssmoto"><i class="fa-brands fa-twitter pr-2 ml-1 fa-2x"></i></a>
+        <a href="https://www.youtube.com/channel/UCoZbSpx7Au_YrdW6jI-d7qQ"><i class="fa-brands fa-youtube pr-2 ml-1 fa-2x"></i></a>
+        <a href="https://github.com/francisalfonso"><i class="fa-brands fa-github pr-2 ml-1 fa-2x"></i></a>
 
 
         {{-- <a href="/listings/create"

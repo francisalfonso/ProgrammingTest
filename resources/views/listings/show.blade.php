@@ -18,8 +18,8 @@
                             src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}"
                             alt=""
                         />
-
-                        <h3 class="text-2xl mb-2">{{$listing->name}}</h3>
+                        <h4 class="text-2xl mb-2">Company ID: {{$listing->id}}</h4>
+                        <h3 class="text-2xl mb-2 font-bold">{{$listing->name}}</h3>
                         <div class="text-xl font-bold mb-4">{{$listing->email}}</div>
 
                         {{-- <x-listing-tags :tagsCsv="$listing->tags"/> --}}
@@ -74,17 +74,17 @@
                             {{-- WEBSITE URL --}}
                             <a href="{{$listing->website}}"
                                     target="_blank"
-                                    class="bg-black text-white py-2 px-5 mt-10 rounded-lg"
+                                    class="bg-black text-white py-2 px-5 mt-10 rounded-lg hover:bg-white hover:text-black hover:border border-black"
                                     ><i class="fa-solid fa-globe pr-2"></i> Visit
                                     Website
                             </a>
 
                         <x-card class="mt-4 p-2 flex space-x-6">    
                             {{-- ADD EMPLOYEES --}}
-                            <a href="/employees/create-employees" class="bg-black text-white py-2 px-5 rounded-lg"><i class="fa-solid fa-plus pr-2"></i> Add Employees</a>
+                            <a href="/employees/create-employees" class="bg-black text-white py-2 px-5 rounded-lg hover:bg-white hover:text-black hover:border border-black"><i class="fa-solid fa-plus pr-2"></i> Add Employees</a>
 
                             {{-- EDIT COMPANY --}}
-                            <a href="/listings/{{$listing->id}}/edit" class="bg-black text-white py-2 px-5 rounded-lg">
+                            <a href="/listings/{{$listing->id}}/edit" class="bg-black text-white py-2 px-5 rounded-lg hover:bg-white hover:text-black hover:border border-black">
                                 <i class="fa-solid fa-pencil pr-2"></i> Edit Company
                             </a>
                             
@@ -92,7 +92,7 @@
                             <form method="POST" action="/listings/{{$listing->id}}">
                                 @csrf
                                 @method('DELETE')
-                                <button class="content-center bg-red-500 text-white py-2 px-5 rounded-lg"><i class="fa-solid fa-trash pr-2 "></i> Delete Company</button>
+                                <button class="content-center bg-red-500 text-white py-2 px-5 rounded-lg hover:bg-white hover:text-red-500 hover:border border-red-500"><i class="fa-solid fa-trash pr-2 "></i> Delete Company</button>
                             </form>
                          </x-card>
                     </div>
